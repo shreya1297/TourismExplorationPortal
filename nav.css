@@ -1,0 +1,96 @@
+@charset "utf-8";
+#mynav {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	position: relative;
+	display: block;
+	width: 100%;
+	box-shadow:1px 1px 5px 0px #666;
+}
+#mynav li {
+	float: left;
+	width: 16.66%;
+	position: relative;
+	display: block;
+}
+
+#mynav li a {
+	display: block;
+	padding-top: 1em;
+	padding-right: 0em;
+	padding-bottom: 1em;
+	padding-left: 0em;
+	text-align: center;
+	
+	/*change bgcolour and text color properties are given  below*/
+	background-color:#BED2EB;
+	color:#000;
+	/*change background-colour and  color above*/
+	
+	text-decoration: none;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	/*to change border-colour and  thicknes properties are given below*/
+
+	
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #f5f5f5;
+	
+}
+
+/*to change on mouseover bgcolour and text color properties are given below*/
+#mynav li a:hover
+{
+	background-color:#0FF;
+	color:#F69;
+	
+}
+
+
+#mynav li ul {
+	margin: 0px;
+	padding: 0px;
+	list-style-type: none;
+	display: block;
+	position: absolute;
+	width: 100%;
+	visibility:hidden;
+	top:150%;
+	opacity:0;
+	box-shadow:1px 1px 5px 0px #666;
+	transition:all .3s;
+	z-index:1000000;
+}
+#mynav li ul li {
+	float: none;
+	clear: both;
+	display: block;
+	width: 100%;
+	
+}
+#mynav li ul li a {
+	text-align: left;
+	padding-right: 1em;
+	padding-left: 1.5em;
+	border-right-style: none;
+	border-right-width: 0px;	
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #f5f5f5;
+}
+#mynav li ul li:last-child a
+{
+	border-right:none;
+}
+#mynav li ul li:last-child a
+{
+	border-bottom:none;
+}
+#mynav li:hover ul
+{
+	visibility:visible;
+	opacity:1;
+	top:100%;
+}
